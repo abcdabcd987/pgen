@@ -1,7 +1,6 @@
-# pgen: Pattern Workload Generator
+from .pgen import PGen
 
-```
-    ██████                     
+ASCII_ART = """    ██████                     
   ██  ░░░░█                    
  ██   █░░░██                   ██████╗ 
 ███   ░░░░██                   ██╔══██╗
@@ -16,12 +15,6 @@
      █   ░░░░░░░█████░██░░░░░█    ╚═════╝ ╚══════╝╚═╝  ╚═══╝
        ███ ░░░░░░░░░░░░▒████▒░█
               █    █
-                             
-```
+"""
 
-## Ascii Art
-
-* Icons made by [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
-* Image to Ascii Art: <https://manytools.org/hacker-tools/convert-image-to-ansi-art/>
-* Text to Ascii Art: <http://patorjk.com/software/taag/>
-
+__all__ = ['PGen', 'ASCII_ART']
