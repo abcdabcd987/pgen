@@ -50,7 +50,7 @@ class PGen:
                 if self._epoch != 0:
                     sys.stdout.write('\n')
                 self._epoch += 1
-                self._epoch_total_requests = max(0, int(self._f_gen(self._epoch) * self._max_requests_per_second))
+                self._epoch_total_requests = max(0, int(self._f_gen(self._epoch) * self._max_requests_per_second * self._seconds_per_point))
                 self._epoch_next_request = 0
                 self._print_stat()
                 if self._epoch_total_requests == 0:
